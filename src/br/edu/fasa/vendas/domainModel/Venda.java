@@ -6,6 +6,7 @@ package br.edu.fasa.vendas.domainModel;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.util.List;
 
 /**
  *
@@ -15,6 +16,16 @@ public class Venda {
     private int codigo;
     private Time hora;
     private Date data;
+    private List<ItemVenda> itens;
+    private Cliente cliente;
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
     public int getCodigo() {
         return codigo;
@@ -39,5 +50,14 @@ public class Venda {
     public void setHora(Time hora) {
         this.hora = hora;
     }
+
+    public List<ItemVenda> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemVenda> itens) {
+        this.itens = itens;
+    }
+
     
 }
