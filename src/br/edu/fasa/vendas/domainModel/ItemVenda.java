@@ -12,6 +12,7 @@ public class ItemVenda {
     private int codigo;
     private int quantidade;
     private float valorUnitario;
+    private Produto produto;
 
     public int getCodigo() {
         return codigo;
@@ -19,6 +20,14 @@ public class ItemVenda {
 
     public void setCodigo(int codigo) {
         this.codigo = codigo;
+    }
+
+    public Produto getProduto() {
+        return produto;
+    }
+
+    public void setProduto(Produto produto) {
+        this.produto = produto;
     }
 
     public int getQuantidade() {
@@ -36,5 +45,6 @@ public class ItemVenda {
     public void setValorUnitario(float valorUnitario) {
         this.valorUnitario = valorUnitario;
     }
-    
+
+        
 }
