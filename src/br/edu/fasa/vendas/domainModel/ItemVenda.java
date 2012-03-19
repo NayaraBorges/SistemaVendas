@@ -44,7 +44,5 @@ public class ItemVenda {
 
     public void setValorUnitario(float valorUnitario) {
         this.valorUnitario = valorUnitario;
-    }
-
-        
+    }  
 }
